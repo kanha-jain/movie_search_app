@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { CardList } from './CardList.jsx';
+import { API_KEY } from '../../config';
 
 export const SearchMovie = () => {
 
@@ -12,7 +13,7 @@ export const SearchMovie = () => {
         
         if (!query) return;
 
-        const url = `https://api.themoviedb.org/3/search/movie?api_key=d8f301b1aa27214b0d0ffb05b75409b4&language=en-US&query=${query}&page=1&include_adult=false`;
+        const url = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&language=en-US&query=${query}&page=1&include_adult=false`;
 
         try {
             const res = await fetch(url);
