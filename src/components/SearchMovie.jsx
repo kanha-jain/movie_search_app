@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { CardList } from './CardList.jsx';
-import { API_KEY } from '../../config';
+import { API_KEY } from '../config';
 
 export const SearchMovie = () => {
 
